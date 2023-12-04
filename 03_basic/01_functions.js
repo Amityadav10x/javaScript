@@ -5,6 +5,7 @@ console.log("e");
 console.log("s");
 
 
+
 function sayMyName () {
 console.log("h");
 console.log("i");
@@ -29,6 +30,31 @@ function addTwoNumbers (number1, number2) {
 
 const result = addTwoNumbers(3,7)
 console.log("result:" , result);
+
+
+
+function loginUserMessage(username = "amit"){
+
+
+    // if (username === undefined){
+
+    if(!username){
+        
+        console.log("please enter a username");
+        return
+    }
+
+
+
+        
+    
+    
+    return `${username} just logged in`
+
+}
+
+console.log(loginUserMessage("amit"));
+// console.log(loginUserMessage());
 
 
 
